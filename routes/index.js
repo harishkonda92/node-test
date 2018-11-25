@@ -3,7 +3,6 @@ const router = express.Router();
 const { mailer } = require('./sendemails');
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  console.log(process.env.password)
   res.render('index', { title: 'Express' });
 });
 
